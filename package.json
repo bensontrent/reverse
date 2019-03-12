@@ -1,0 +1,40 @@
+{
+  "name": "reverse-utils",
+  "version": "1.0.0",
+  "description": "A library to reverse individual digits in numbers or whole words in sentances.",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bensontrent/reverse.git"
+  },
+  "keywords": [
+    "Reverse",
+    "digits",
+    "words",
+    "sentances"
+  ],
+  "author": "Benson Trent <bensontrent@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bensontrent/reverse/issues"
+  },
+  "homepage": "https://github.com/bensontrent/reverse#readme",
+  "devDependencies": {
+    "babel-jest": "^24.4.0",
+    "jest": "^24.4.0",
+    "rollup": "^0.68.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.20.0",
+    "typescript": "^3.3.3"
+  }
+}
