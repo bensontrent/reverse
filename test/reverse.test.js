@@ -56,7 +56,7 @@ const testCases = [{
     expected: "Surprised are we!"
 },
     {
-        goal: "It should keep capitalize the start of the sentence",
+        goal: "It should keep capitalization the start of the sentence",
         input: "This is capitalized correctly.",
         expected: "Correctly capitalized is this."
     }

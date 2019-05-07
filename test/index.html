@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>"Reverse" testing playground</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mithril/0.2.0/mithril.min.js"></script>
+    <script src="../dist/index.js"></script>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+        function App() {
+        var text = '';
+        return {
+            view: function() {
+                return [
+                    m("div", "Reverse the words in a sentence (works for digits in numbers too): ",
+                    m('input[type=text]', {
+                        value: text,
+                        oninput: function(event) {
+                            text = event.target.value;
+                        }
+                    }),
+                    m('h4', reverse(text)))
+                ];
+            }
+        };
+    }
+    m.mount(document.getElementById("app"), App());
+
+</script>
+</body>
+</html>
