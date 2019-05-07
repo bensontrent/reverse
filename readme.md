@@ -33,5 +33,4 @@ reverse("Cool is this!");  // Result: "This is cool!"
 
 reverse(4321) 
 // Result: 1234
-
-
+```
