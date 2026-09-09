@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
     "declaration": true,
-    "declarationDir": "./dist",
-    "module": "es6",
-    "noImplicitAny": true,
+    "emitDeclarationOnly": true,
+    "rootDir": "./src",
     "outDir": "./dist",
-    "target": "es5"
+    "skipLibCheck": true,
+    "types": []
   },
   "include": [
     "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
   ]
 }
